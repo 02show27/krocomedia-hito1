@@ -2,27 +2,39 @@
 
 body { 
   margin: 0; 
-  font-family: Arial, sans-serif; 
+  font-family: 'Times New Roman', Times, serif; 
   color: #405047; }
 
 header { 
   display: flex; 
   justify-content: space-between; 
-  padding: 20px; }
+  padding: 20px; 
+  color: darkorange;
+}
+  
 
 nav { 
   display: flex; 
-  gap: 50px; 
-  background-color: bisque;
-  size: "text" 50px;
+  gap: 20px; 
+  color: crimson;
+
     }
 
 a { 
   color: inherit; 
   text-decoration: none;
+  font-size: 25px;
 
 }
+h1{
+color: blue;
+font-size: 40px;
+}
 
+p{
+  font-size: 25px;
+  color: blueviolet;
+}
 .hero { 
   padding: 80px 20px; 
   background: #10231c; 
@@ -32,9 +44,9 @@ a {
 
 .boton, 
 button { 
-  padding: 12px 20px; 
+  padding: 12px 12px; 
   background: #9dcc3b; 
-  border: 0; 
+  border: 12; 
 }
 
 .seccion, 
@@ -48,6 +60,7 @@ button {
 .pasos { 
   display: flex; 
   gap: 20px; 
+  background-color: aqua;
 }
 
 article, 
@@ -74,12 +87,18 @@ textarea {
 }
 
 footer { 
-  height: 100px;
+  height: 200px;
   padding: 10px; 
   background: #10231c; 
   color: white; 
   text-align: center; 
   text-decoration: double;
+  font-size: 15px;
+}
+
+form {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: darkgoldenrod;
 }
 
 @media (max-width: 750px) 
