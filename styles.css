@@ -240,3 +240,43 @@ button {
     flex: 1;
   }
 }
+
+.btn-tema {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #9dcc3b;
+  color:brown;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+body.oscuro {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.oscuro header,
+body.oscuro .seccion,
+body.oscuro .contacto,
+body.oscuro form,
+body.oscuro article,
+body.oscuro .pasos li {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.oscuro h1,
+body.oscuro h2,
+body.oscuro h3,
+body.oscuro nav a,
+body.oscuro label {
+  color: #9dcc3b;
+}
+
+body.oscuro p {
+  color: #cccccc;
+}
