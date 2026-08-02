@@ -4,7 +4,7 @@ Proyecto web para servicios de diseño gráfico.
 
 ## Descripción
 
-KrocoMedia es una aplicación web orientada a diseñadores gráficos.  
+KrocoMedia es una aplicación web orientada a diseñadores gráficos.
 El cliente envía su requerimiento, el diseñador realiza el trabajo y posteriormente entrega el diseño terminado.
 
 ## Tecnologías utilizadas
@@ -22,6 +22,7 @@ Jhonny Tito Castro
 
 S2 — Hito 1: repositorio y sitio web publicado.
 HITO 1 – KROCOMEDIA
+CSS + formulario de contacto
 ## Sitio web
 
 1. Repositorio de GitHub:
