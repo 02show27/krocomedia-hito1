@@ -13,3 +13,12 @@ botonModo.addEventListener("click", () => {
     botonModo.textContent = "Modo Oscuro";
   }
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", function () {
+
+    menu.classList.toggle("active");
+
+});
