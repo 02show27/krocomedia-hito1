@@ -1,18 +1,18 @@
-
 const botonModo = document.querySelector("#btn-modo");
 const cuerpo = document.body;
 
-
 botonModo.addEventListener("click", () => {
 
-  cuerpo.classList.toggle("oscuro");
+    cuerpo.classList.toggle("oscuro");
 
-  if (cuerpo.classList.contains("oscuro")) {
-    botonModo.textContent = "Modo Claro";
-  } else {
-    botonModo.textContent = "Modo Oscuro";
-  }
+    if (cuerpo.classList.contains("oscuro")) {
+        botonModo.textContent = "Modo Claro";
+    } else {
+        botonModo.textContent = "Modo Oscuro";
+    }
+
 });
+
 
 const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
@@ -23,7 +23,7 @@ menuToggle.addEventListener("click", function () {
 
 });
 
-/* 09/08/2026 Mensajes de confirmacion */
+
 
 const formulario = document.querySelector("#contactForm");
 
@@ -31,86 +31,73 @@ const nombre = document.querySelector("#nombre");
 const apellido = document.querySelector("#apellido");
 const correo = document.querySelector("#correo");
 const telefono = document.querySelector("#telefono");
-
-const formMensaje = document.querySelector("#formMensaje");
+const mensaje = document.querySelector("#mensaje");
 
 
 formulario.addEventListener("submit", function (event) {
 
-  event.preventDefault();
-
-  const nombreValor = nombre.value.trim();
-  const apellidoValor = apellido.value.trim();
-  const correoValor = correo.value.trim();
-  const telefonoValor = telefono.value.trim();
-
-  formMensaje.textContent = "";
-
-  formMensaje.classList.remove("mostrar", "error", "exito");
+    const nombreValor = nombre.value.trim();
+    const apellidoValor = apellido.value.trim();
+    const correoValor = correo.value.trim();
+    const telefonoValor = telefono.value.trim();
+    const mensajeValor = mensaje.value.trim();
 
 
 
 
-  if (nombreValor === "") {
+    if (nombreValor === "") {
 
-    formMensaje.textContent =
-      "Por favor, ingresa tu nombre.";
+        event.preventDefault();
 
-    formMensaje.classList.add(
-      "mostrar",
-      "error"
-    );
+        alert("Por favor, ingresa tu nombre.");
 
-    return;
-  }
+        return;
+    }
+
+
+ 
+
+    if (apellidoValor === "") {
+
+        event.preventDefault();
+
+        alert("Por favor, ingresa tu apellido.");
+
+        return;
+    }
+
+
+
+    if (!correoValor.includes("@")) {
+
+        event.preventDefault();
+
+        alert("Ingresa un correo válido. Debe contener una arroba (@).");
+
+        return;
+    }
+
+
+
+    if (telefonoValor === "") {
+
+        event.preventDefault();
+
+        alert("Por favor, ingresa tu teléfono.");
+
+        return;
+    }
+
 
   
-  if (apellidoValor === "") {
+    if (mensajeValor === "") {
 
-    formMensaje.textContent =
-      "Por favor, ingresa tu apellido.";
+        event.preventDefault();
 
-    formMensaje.classList.add(
-      "mostrar",
-      "error"
-    );
+        alert("Por favor, ingresa tu requerimiento.");
 
-    return;
-  }
+        return;
+    }
 
-
-  if (!correoValor.includes("@")) {
-
-    formMensaje.textContent =
-      "Ingresa tu correo porfavor - El correo debe contener una arroba (@).";
-
-    formMensaje.classList.add(
-      "mostrar",
-      "error"
-    );
-
-    return;
-  }
-
-  if (!telefonoValor) {
-
-    formMensaje.textContent =
-      "Ingresa tu teléfono porfavor.";
-
-    formMensaje.classList.add(
-      "mostrar",
-      "error"
-    );
-
-    return;
-  }
-
-  formMensaje.textContent =
-    "¡Formulario enviado correctamente!";
-
-  formMensaje.classList.add(
-    "mostrar",
-    "exito"
-  );
 
 });
