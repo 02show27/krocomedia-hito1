@@ -1,5 +1,4 @@
 <?php
-
 $servicios=[
 
 "Examen de la vista - Bs 50",
@@ -27,5 +26,3 @@ echo "<p>$servicio</p>";
 }
 
 echo "<p>Te atiende Jhonny Tito Castro</p>";
-
-?>
