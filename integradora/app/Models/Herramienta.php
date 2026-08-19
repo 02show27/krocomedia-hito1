@@ -10,6 +10,6 @@ class Herramienta extends Model
 
     protected $fillable = [
         'nombre',
-        'precio'
+        'precio',
     ];
 }
